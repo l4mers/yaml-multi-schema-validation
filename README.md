@@ -8,33 +8,41 @@ workflow. Use the "Set up a workflow yourself" option if prompted.
 
 ```
 name: Validate Multiple YAML Files
+
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Checkout code
-uses: actions/checkout@v4
-- name: Set up Node.js
-uses: actions/setup-node@v3
-with:
-node-version: '18'
-- run: npm install -g yaml-schema-validator
-- name: Validate Car YAML
-run: |
-schema validate -e -f car.yml -s schemas/schema_car.yml
-- name: Validate Computer YAML
-run: |
-schema validate -e -f computer.yml -s schemas/schema_computer.yml
-- name: Validate Person YAML
-run: |
-schema validate -e -f person.yml -s schemas/schema_person.yml
-- name: Validate Schedule YAML
-run: |
-schema validate -e -f schedule.yml -s schemas/schema_schedule.yml
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - run: npm install -g yaml-schema-validator
+
+    - name: Validate Car YAML
+      run: |
+        schema validate -e -f car.yml -s schemas/schema_car.yml
+
+    - name: Validate Computer YAML
+      run: |
+        schema validate -e -f computer.yml -s schemas/schema_computer.yml
+
+    - name: Validate Person YAML
+      run: |
+        schema validate -e -f person.yml -s schemas/schema_person.yml
+
+    - name: Validate Schedule YAML
+      run: |
+        schema validate -e -f schedule.yml -s schemas/schema_schedule.yml
 ```
 
 4. **Add the Schemas**: Create a folder named schemas in the root of your repository. Inside schemas,
