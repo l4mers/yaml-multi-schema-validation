@@ -1,2 +1,8 @@
 car:
-  manufacturer: volvo
+  manufacturer: "volvo"
+  model: "XC90"
+  year: "2004"
+  attributes: 
+    - "blå"
+    - "gammal"
+  reg: "GHJ873"
