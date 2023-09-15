@@ -1,3 +1,14 @@
 computer:
-  cpu:
+  cpu: 
+    manufacturer: "Acer"
     cores: 8
+    frequency: 2.4
+  memory:
+    manufacturer: "DRAM"
+    size: 8
+    type: "GB"
+  disk:
+    manufacturer: "FDD"
+    size: 5
+    type: "SSD"
+    
