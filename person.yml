@@ -1,3 +1,8 @@
 person:
   name:
-    first_name: Stig
+    first_name: 'Stig'
+    last_name: 'Kardashian'
+  age: 46
+  class: 'Överklass'
+  start_year: '2999'
+  hobbies: 'Killing'
