@@ -6,4 +6,5 @@ person:
   class: 'Överklass'
   start_year: 2999
   hobbies:
-    -'Killing'
+    - 'Killing'
+    - 'butching'
