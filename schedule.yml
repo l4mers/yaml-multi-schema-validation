@@ -1,0 +1,4 @@
+schedule:
+  program: java
+  lessons:
+    - date: "2022-02-01"

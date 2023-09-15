@@ -1,0 +1,19 @@
+---
+schedule:
+  year:
+    type: string
+    required: true
+    length:
+      min: 4
+      max: 4
+  program:
+    type: string
+    required: true
+  lessons:
+    - required: true
+      date:
+        type: string
+        required: true
+      description:
+        type: string
+        required: true

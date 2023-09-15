@@ -1,0 +1,23 @@
+---
+car:
+  manufacturer:
+    type: string
+    required: true
+  model:
+    type: string
+    required: true
+  year:
+    type: string
+    required: true
+    length:
+      min: 4
+      max: 4
+  attributes:
+    - required: true
+    - type: string
+  reg:
+    required: true
+    type: string
+    length:
+        min: 6
+        max: 6

@@ -1,0 +1,23 @@
+---
+person:
+  name:
+    first_name:
+      type: string
+      required: true
+    last_name:
+      type: string
+      required: true
+  age:
+    type: number
+    required: true
+  class:
+    type: string
+    required: true
+  start_year:
+    type: number
+    required: true
+  hobbies:
+  - required: true
+  - type: string
+
+    

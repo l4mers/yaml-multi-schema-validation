@@ -1,0 +1,32 @@
+---
+computer:
+  cpu:
+    manufacturer:
+      type: string
+      required: true
+    cores:
+      type: number
+      required: true
+    frequency:
+      type: number
+      required: true
+  memory:
+    manufacturer:
+      type: string
+      required: true
+    size:
+      type: number
+      required: true
+    type:
+      type: string
+      required: true
+  disk:
+    manufacturer:
+      type: string
+      required: true
+    size:
+      type: number
+      required: true
+    type:
+      type: string
+      required: true
