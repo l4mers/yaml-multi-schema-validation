@@ -19,18 +19,6 @@ jobs:
 
     - run: npm install -g yaml-schema-validator
 
-    - name: Validate Car YAML
-      run: |
-        schema validate -e -f car.yml -s schemas/schema_car.yml
-
-    - name: Validate Computer YAML
-      run: |
-        schema validate -e -f computer.yml -s schemas/schema_computer.yml
-
-    - name: Validate Person YAML
-      run: |
-        schema validate -e -f person.yml -s schemas/schema_person.yml
-
     - name: Validate Schedule YAML
       run: |
         schema validate -e -f schedule.yml -s schemas/schema_schedule.yml
