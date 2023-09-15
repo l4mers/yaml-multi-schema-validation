@@ -5,4 +5,5 @@ person:
   age: 46
   class: 'Överklass'
   start_year: 2999
-  hobbies: 'Killing'
+  hobbies:
+    -'Killing'
